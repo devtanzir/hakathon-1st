@@ -9,7 +9,7 @@ const Products = async () => {
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap -m-4">
             {data?.products.map((product) => (
-              <ProductsItem product={product} />
+              <ProductsItem key={product.title} product={product} />
             ))}
           </div>
         </div>
